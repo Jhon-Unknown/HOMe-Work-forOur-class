@@ -1,0 +1,125 @@
+# FILE: BASICS OF PYTHON CONTEXT
+
+# 1. Comments
+# Comments are used to explain code and are ignored by the Python interpreter.
+# This is a single-line comment
+
+"""
+This is a
+multi-line comment
+"""
+
+# 2. Variables and Data Types
+# Variables store data values. Python has several data types including integers, floats, strings, and booleans.
+# Integer
+x = 5
+
+# Float
+y = 3.14
+
+# String
+name = "Alice"
+
+# Boolean
+is_active = True
+
+# 3. Basic Operators
+# Python supports arithmetic, comparison, and logical operators.
+# Arithmetic operators
+sum = 5 + 3
+difference = 5 - 3
+product = 5 * 3
+quotient = 5 / 3
+
+# Comparison operators
+is_equal = (5 == 3)
+is_greater = (5 > 3)
+
+# Logical operators
+and_result = (5 > 3) and (3 > 1)
+or_result = (5 > 3) or (3 < 1)
+
+# 4. Control Flow
+# Control flow statements include `if`, `for`, and `while` loops.
+# If statement
+if x > 0:
+    print("x is positive")
+elif x == 0:
+    print("x is zero")
+else:
+    print("x is negative")
+
+# For loop
+for i in range(5):
+    print(i)
+
+# While loop
+count = 0
+while count < 5:
+    print(count)
+    count += 1
+
+# 5. Functions
+# Functions are defined using the `def` keyword and are used to encapsulate code for reuse.
+def greet(name):
+    return f"Hello, {name}!"
+
+print(greet("Alice"))
+
+# 6. Lists
+# Lists are ordered collections of items.
+fruits = ["apple", "banana", "cherry"]
+print(fruits[0])  # Output: apple
+
+# Adding an item
+fruits.append("date")
+
+# Removing an item
+fruits.remove("banana")
+
+# 7. Dictionaries
+# Dictionaries store key-value pairs.
+person = {
+    "name": "Alice",
+    "age": 25,
+    "city": "New York"
+}
+
+print(person["name"])  # Output: Alice
+
+# Adding a key-value pair
+person["email"] = "alice@example.com"
+
+# Removing a key-value pair
+del person["age"]
+
+# 8. Classes and Objects
+# Python is an object-oriented programming language. Classes define the blueprint for objects.
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def greet(self):
+        return f"Hello, my name is {self.name} and I am {self.age} years old."
+
+# Creating an object
+alice = Person("Alice", 25)
+print(alice.greet())
+
+# 9. Importing Modules
+# Modules are files containing Python code. You can import and use functions and classes from them.
+import math
+
+print(math.sqrt(16))  # Output: 4.0
+
+# 10. File I/O
+# Reading from and writing to files.
+# Writing to a file
+with open("example.txt", "w") as file:
+    file.write("Hello, World!")
+
+# Reading from a file
+with open("example.txt", "r") as file:
+    content = file.read()
+    print(content)  # Output: Hello, World!

@@ -1,1 +1,8 @@
-#Temperature Calculator
+# PROGRAM TO CONVERT FAHRENHEIT TO CELSIUS
+temporary = input("Enter the temperature in Fahrenheit: ")
+f_temp = float(temporary)
+c_temp = (f_temp - 32) / 1.8
+print("Celsius temperature = ", c_temp)
+
+if __name__ == "__main__":
+    pass  # Replace with your main function if you have one
